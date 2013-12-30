@@ -1,1 +1,268 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sharang Phadke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sharang Phadke, an electrical engineering student in NYC excited about using technology to build better user experiences.">
+    <meta name="author" content="Sharang Phadke">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="assets/css/carousel.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]
+      <script src="/assets/js/html5shiv.js"></script>
+    ![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+  </head>
+
+  <body>
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" id="name" href="#">Sharang Phadke</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav pull-right" id="navlist">
+                <li class="active" id="navhome"><a href="#home">Home</a></li>
+                <li id="navprojects"><a href="#projects">Projects</a></li>
+                <li id="navme"><a href="#me">Me</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <img src="assets/img/himalayan2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><a href="http://www.pronouncenames.com/pronounce/sharang">sha &#8226; rang</a></h1>
+              <p class="lead">An electrical engineering student in NYC excited about using technology to build better user experiences.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="projects">
+          <img src="assets/img/journey-3.jpg" alt="">
+          <div id="project-container">
+            <div class="project-item horizontal-1">
+              <a href="#roboroach"> <img src="assets/img/projects/roboroach.jpg" alt="Autonomous Mobile Cockroach"> </a>
+            </div>
+            <div class="project-item horizontal-1">
+              <a href="#detection"> <img src="assets/img/projects/detection1.jpg" alt="Detection Algorithms for Stochastic Processes"> </a>
+            </div>
+            <div class="project-item vertical-1">
+            <a href="#marblematch"> <img src="assets/img/projects/marblematch1.jpg" alt="Marble Match"> </a>
+            </div>
+            <div class="project-item vertical-1">
+              <a href="#pulseox"> <img src="assets/img/projects/pulseox1.jpg" alt="Pulse Oximeter"> </a>
+            </div>
+            <div class="project-item horizontal-2">
+              <a href="#dld"> <img src="assets/img/projects/dld.jpg" alt="Super Mario Bros with Digital Logic"> </a>
+            </div>
+          </div>
+
+          <!-- Featurette Project Descriptions -->
+          <div class="container marketing">
+
+            <!-- START THE FEATURETTES -->
+
+            <div class="featurette" id="roboroach">
+              <h2 class="featurette-heading"> Autonomous Mobile Cockroach</h2>
+              <img class="horizontal-1 img-rounded featurette-image pull-right" src="assets/img/projects/roboroach.jpg">
+              <p class="lead">
+                Cockroaches are a resilient species that could provide assistance to humans in numerous hazardous scenarios such as emergency rescues and nuclear disasters. By outfitting cockroaches with the appropriate control mechanisms and sensing equipment we can increase the effec tiveness of such cockroach “biobots.” A procedure for applying stimulation to cockroaches as a means to control movement was designed and tested. A prototype system was implemented using an Arduino Uno and basic electronic components. By exploring more natural stimulation methods, we can design systems to better employ unmanned autonomous cockroaches (UACs) to aid humans.
+              </p>
+              <h3 class="featurette-link"><a href="static/uac.pdf">read more</a></h3>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="featurette" id="detection">
+              <img class="horizontal-1 img-rounded featurette-image pull-left" src="assets/img/projects/detection1.jpg">
+              <h2 class="featurette-heading">Detection Algorithms for Stochastic Processes</h2>
+              <p class="lead">
+                The purpose of detection is to be able to separate information-bearing patterns from random patterns that distract from the transfer of information. Depending on the amount of distracting noise and quality of underlying information, this task can be difficult. A simple approach for this problem is to compare the signal to a threshold determined by a decision rule based on the characteristics of the signal and channel. In these exercises, the parameters of a MAP detection system were examined. Channel characteristics such as varying priors, SNRs, and transmission distributions were considered, and detector constraints such as the minimax rule, as well as different cost structures were analyzed.
+              </p>
+              <p class="lead">
+                Sometimes detection cannot be done with just a threshold because the data set contains multiple features and classes. Machine learning remedies this problem by using statistical characteristics of the datasets to classify them. A machine learning system using a MAP estimate is trained, and its performance is tested using the Iris dataset.
+              </p>
+              <h3 class="featurette-link"><a href="static/detection.pdf">read more</a></h3>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="featurette" id="marblematch">
+              <img class="vertical-1 img-rounded featurette-image pull-right" src="assets/img/projects/marblematch1.jpg">
+              <h2 class="featurette-heading">Marble Match</h2>
+              <p class="lead">
+                “Marble Match” is a game designed specifically for autistic children, with the intent of engaging these children despite their disability. Because autistic children often have short attention spans and become bored or frustrated by games that other children enjoy, Marble Match isintended to be an simple game which offers a clean and attractive visualreward for completing the task of the game. It involves matching colored marbles to the color of several LEDs when they light up. If the correct color marble is inserted into the correct hole at the top of the tower, a series of IR sensors, a color sensor, and a servomotor check and consequently channel the marble to a transparent helical tube. The spiraling motion of colored marbles is a visually pleasing reward which can captivate children without flashing lights and or playing loud sounds, both of which often aggravate autistic children. The game teaches the basic concept of matching colors, and more importantly can allow children to learn patience and diligence.
+              </p>
+              <h3 class="featurette-link"><a href="static/marblematch.pdf">read more</a></h3>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="featurette" id="pulseox">
+              <img class="vertical-1 img-rounded featurette-image pull-right" src="assets/img/projects/pulseox1.jpg">
+              <h2 class="featurette-heading">Pulse Oximeter</h2>
+              <p class="lead">
+                Pulse oximetry is a noninvasive method of measuring blood oxygenation. The method is based on the fact that different wavelengths of light are absorbed extremely differently by oxyhemoglobin and deoxyhemoglobin. The ratio of oxyhemoglobin to deoxyhemoglobin can be calculated by measuring these different adsorptions, and can therefore give a measurement of how well oxygen is being absorbed by the blood.
+              </p>
+              <img class="square-1 img-rounded featurette-image pull-left" src="assets/img/projects/pulseox2.png">
+              <p class="lead">
+                The absorption measurements are made by shining light from red and infrared LEDs through a thin area of the body, usually a finger, and measuring how much a photodiode on the other side is activated. The more light that is absorbed by the hemoglobin, the less light will reach the photodiode. By alternately turning on and off the red and infrared LEDs at short intervals, the relative absorptions of each wavelength could be measured as current through the photodiode.
+              </p>
+              <h3 class="featurette-link"><a href="http://whycooper.org/project/85/Pulse_Oximeter">read more</a></h3>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="featurette" id="dld">
+              <img class="horizontal-2 img-rounded featurette-image pull-right" src="assets/img/projects/dld.jpg">
+              <h2 class="featurette-heading">Super Mario Bros with Digital Logic</h2>
+              <p class="lead">
+                This project was an implementation of Nintendo’s Super Mario Bros. using digital logic. In this game, Mario is represented by an LED and is stationary in the x-direction, and enemies, also represented by LEDs, approach him from the positive x-direction. The player receives points, displayed on two 7 segment displays, for jumping at the right time using a jump button and landing on the enemies. The player also has to jump over gaps in the ground, displayed on a second row of LEDs below Mario and the enemies. The game is synchronized with a short excerpt of the Super Mario Bros. song playing on a piezoelectric element or speaker, which repeats once it reaches its end. The song adds to the user experience of the game as well as the complexity of the project.
+              </p>
+              <h3 class="featurette-link"><a href="static/dld.pdf">read more</a></h3>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="assets/img/climbing.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption" id="carousel-me" >
+                <p> <a class="lead" href="static/resume.pdf" >Resume</a></p>
+                <p> <a class="lead" href="http://www.linkedin.com/pub/sharang-phadke/56/811/b94" >Linkedin</a></p>
+                <p> <a class="lead" href="https://github.com/SharangP" >Github</a></p>
+                <p> <a class="lead" href="https://www.facebook.com/sharang.phadke" >Facebook</a></p>
+                <p> <a class="lead" href="https://twitter.com/sharangphadke" >Twitter</a></p>
+                <p> <a class="lead" href="mailto:sharang.phadke@gmail.com" >Email</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+      <!-- FOOTER -->
+<!-- 
+      <footer>
+        <p class="pull-right" style="z-index:100"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+ -->
+    </div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          $('#myCarousel').carousel('pause')
+          // Isotope on Projects page
+          $('#project-container').imagesLoaded(function(){
+            $('#project-container').isotope({
+              // options
+              itemSelector : '.project-item',
+              layoutMode : 'masonry',
+              resizesContainer : false
+            });
+          })
+        })
+      }(window.jQuery)
+
+      current = function() {
+        return $('#myCarousel .active').index('#myCarousel .item');
+      }
+
+      //Make sure nav tab is same as carousel
+      $('#myCarousel').on('slid.bs.carousel', function () {
+        $('#navlist').children().removeClass('active');
+        $($('#navlist').children()[current()]).addClass('active');
+        window.location.hash = "#" + $('#navlist').children()[current()].id.substring(3);
+        if(current() == 1){
+          $('#project-container').isotope('shuffle');
+        }
+      })
+
+      // Nav bar carousel rotation
+      $('#navhome').click(function() {
+        $('#myCarousel').carousel(0)
+      })
+
+      $('#navprojects').click(function() {
+        $('#myCarousel').carousel(1)
+      })
+
+      $('#navme').click(function() {
+        $('#myCarousel').carousel(2)
+      })
+
+      // Rotation with arrow keys
+      document.onkeydown = function() {
+        switch (window.event.keyCode) {
+          case 37:
+              $('#myCarousel').carousel('prev')
+              break
+          case 39:
+              $('#myCarousel').carousel('next')
+              break
+        }
+      }
+
+      // Shuffle projects once in a while
+      setInterval(function(){
+        if(current() == 1 && !$('.project-item:hover').length) {
+          $('#project-container').isotope('shuffle');
+        }
+      }, 7000);
+
+    </script>
+
+  </body>
+</html>
