@@ -4,7 +4,6 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  /*padding-bottom: -40px;*/
   color: #5a5a5a;
   height: 100%;
   background-color: 
@@ -22,14 +21,14 @@ body {
   right: 0;
   z-index: 10;
   margin-top: 20px;
-  margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  /*margin-bottom: -90px;  Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
 }
 .navbar-wrapper .navbar {
 }
 
 /* Remove border and change up box shadow for more contrast */
 .navbar .navbar-inner {
-  padding: 6px 25px 6px 25px;
+  padding: 7px 45px 7px 45px;
   border: 0;
   -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
      -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
@@ -38,8 +37,8 @@ body {
 
 /* Downsize the brand/project name a bit */
 .navbar .brand {
-  padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-  font-size: 42px;
+  padding: 14px 30px 16px; /* Increase vertical padding to match navbar links */
+  font-size: 44px;
   /*font-weight: bold;*/
   text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 }
@@ -47,7 +46,7 @@ body {
 /* Navbar links: increase padding for taller navbar */
 .navbar .nav > li > a {
   padding: 15px 20px;
-  font-size: 16pt;
+  font-size: 20pt;
 }
 
 /* Offset the responsive button for proper vertical alignment */
@@ -83,20 +82,21 @@ body {
 	background-color: transparent;
   position: static;
   max-width: 550px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
   border-radius: 4px;
-}
-
-/* HOME FRAME */
-
-#home-frame {
-	background-image: url('../img/climbing.jpg');
-}
-
-#home-caption {
-	padding: 0 20px;
+  padding: 0 20px;
   margin-top: 200px;
   margin-left: 50px;
+}
+
+.frame-caption-main {
+}
+
+.frame-caption-sub {
+	position: absolute;
+	padding: 0 20px;
+  bottom: 9%;
+  right: 2%;
 }
 
 .frame-caption h1,
@@ -122,4 +122,14 @@ body {
 
 .frame-caption .btn {
   margin-top: 10px;
+}
+
+.frame-caption-sub .lead {
+	font-size: 14pt;
+}
+
+/* HOME FRAME */
+
+#home-frame {
+	background-image: url('../img/climbing.jpg');
 }
