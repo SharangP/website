@@ -6,7 +6,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #5a5a5a;
   height: 100%;
-  background-color: 
 }
 
 
@@ -28,25 +27,30 @@ body {
 
 /* Remove border and change up box shadow for more contrast */
 .navbar .navbar-inner {
-  padding: 7px 45px 7px 45px;
+  padding: 0 0 0 45px;
   border: 0;
-  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+  /*background-color: green;*/
+  /*-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
      -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-          box-shadow: 0 2px 10px rgba(0,0,0,.25);
+          box-shadow: 0 2px 10px rgba(0,0,0,.25);*/
 }
 
 /* Downsize the brand/project name a bit */
 .navbar .brand {
-  padding: 14px 30px 16px; /* Increase vertical padding to match navbar links */
+  padding: 26px 30px 22px; /* Increase vertical padding to match navbar links */
   font-size: 44px;
   /*font-weight: bold;*/
   text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 }
 
-/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li {
+	padding: 11px 25px 11px 25px;
+}
+
 .navbar .nav > li > a {
   padding: 15px 20px;
   font-size: 20pt;
+  color: black;
 }
 
 /* Offset the responsive button for proper vertical alignment */
@@ -54,6 +58,22 @@ body {
   margin-top: 10px;
 }
 
+/* SPECIFIC LIS */
+#navhome {
+	background-color: #96E266;
+}
+
+#navprojects {
+	background-color: #50BBF3;
+}
+
+#navadv {
+	background-color: #F35556;
+}
+
+#navme {
+	background-color: #F9F162;
+}
 
 /* FRAMES
 -------------------------------------------------- */
@@ -87,9 +107,6 @@ body {
   padding: 0 20px;
   margin-top: 200px;
   margin-left: 50px;
-}
-
-.frame-caption-main {
 }
 
 .frame-caption-sub {
@@ -128,8 +145,16 @@ body {
 	font-size: 14pt;
 }
 
-/* HOME FRAME */
+/* SPECIFIC FRAMES */
 
 #home-frame {
 	background-image: url('../img/climbing.jpg');
+}
+/*
+#home-frame .frame-caption .lead{
+	color: #FF6600;
+}*/
+
+#photo-frame {
+	background-image: url('../img/himalayan2.jpg');
 }
