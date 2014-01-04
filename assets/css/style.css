@@ -22,6 +22,7 @@ body {
   margin-top: 20px;
   /*margin-bottom: -90px;  Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
 }
+
 .navbar-wrapper .navbar {
 }
 
@@ -32,7 +33,7 @@ body {
   background: black; /*#989898;*/
   -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
      -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-          box-shadow: 0 2px 10px rgba(0,0,0,.25);
+        box-shadow: 0 2px 10px rgba(0,0,0,.25);
 }
 
 /* Downsize the brand/project name a bit */
@@ -52,6 +53,7 @@ body {
   font-size: 22pt;
   color: black;
 }
+
 
 /* Offset the responsive button for proper vertical alignment */
 .navbar .btn-navbar {
@@ -86,10 +88,10 @@ body {
   left: 0;
   background-position: top center fixed;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+      -o-background-size: cover;
 }
 
 .frame .container {
@@ -99,10 +101,9 @@ body {
 }
 
 .frame-caption {
-	background-color: transparent;
   position: static;
   max-width: 450px;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.6);
   border-radius: 4px;
   padding: 5px 20px;
   margin-top: 210px;
@@ -110,6 +111,7 @@ body {
 }
 
 .frame-caption-sub {
+  background-color: rgba(0,0,0,0.8);
 	position: absolute;
 	padding: 0 20px;
   margin-top: 53%;
@@ -121,7 +123,7 @@ body {
 .frame-caption .lead {
   margin: 0;
   line-height: 1.25;
-  font-size: 23px;
+  font-size: 24px;
   color: #fff;
   padding: 5px 0;
 }
@@ -146,9 +148,16 @@ body {
 	font-size: 14pt;
 }
 
+/* SPECIFIC CAPTIONS */
+
 #home-caption {
   right: 5%;
 	position: fixed;
+}
+
+#adv-caption {
+  right: 12%;
+  position: fixed;
 }
 
 #me-caption {
@@ -170,9 +179,12 @@ body {
   background-image: url('../img/canada-mt-edith-cavell.jpg');
 }
 
+#adv-frame {
+  background-image: url('../img/canada-bow-lake.jpg');
+}
+
 #me-frame {
   background-image: url('../img/climbing.jpg');
-  height: 100%;
 }
 
 .divider {
@@ -181,10 +193,47 @@ body {
 	background: black;
 }
 
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+  padding-top: 30px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin: 5px;
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.featurette-link {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
 /* CONTAINERS */
 
 #project-container {
-  padding: 90px 60px 0 60px;
+  padding: 95px 60px 0 60px;
 }
 
 /* IMAGE CONTAINERS */
