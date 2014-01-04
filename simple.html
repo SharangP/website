@@ -55,23 +55,21 @@
       </div>
     </div>
 
+    <div class="frame-caption" id="home-caption">
+      <!-- <h1><a href="http://www.pronouncenames.com/pronounce/sharang">sha &#8226; rang</a></h1> -->
+      <p class="lead"></p>
+    </div>
 
-    <div class="frame" id="home-frame">
-      <div class="container">
-        <div class="frame-caption" id="home-caption">
-          <h1><a href="http://www.pronouncenames.com/pronounce/sharang">sha &#8226; rang</a></h1>
-          <p class="lead">I'm an electrical engineering student in NYC excited about using technology to build better user experiences.</p>
-        </div>
-      </div>
+    <div class="frame" id="home-frame" data-description="I'm an electrical engineering student in NYC excited about using technology to build better user experiences.">
     </div>
 
     <div class="divider">
     </div>
 
-    <div class="frame" id="photo-frame-1">
+    <div class="frame" id="photo-frame-1" data-description="two">
       <div class="container">
         <div class="frame-caption frame-caption-sub">
-          <p class="lead">Bow Lake, Canadian Rockies</p>
+          <p class="lead">Twin Peaks, San Fransisco</p>
         </div>
       </div>
     </div>
@@ -79,7 +77,7 @@
     <div class="divider">
     </div>
 
-    <div class="frame" id="photo-frame-2">
+    <div class="frame" id="photo-frame-2" data-description="three">
       <div class="container">
         <div class="frame-caption frame-caption-sub">
           <p class="lead">Mt Edith Cavell, Canadian Rockies</p>
@@ -97,6 +95,23 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery-2.0.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(window).load(function () {
+      $(window).on("scroll resize", function () {
+          var pos = $('#home-caption').offset();
+          $('.frame').each(function () {
+              if (pos.top >= $(this).offset().top && pos.top <= $(this).next().offset().top) {
+                  $('#home-caption').children('p').eq(0).text($(this).attr('data-description'));
+                  return;
+              }
+          });
+      });
+
+      $(document).ready(function () {
+          $(window).trigger('scroll');
+      });
+
+    });
     </script>
 
   </body>
