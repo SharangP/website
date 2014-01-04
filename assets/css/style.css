@@ -104,7 +104,7 @@ body {
   max-width: 450px;
   background-color: rgba(0,0,0,0.9);
   border-radius: 4px;
-  padding: 4px 20px;
+  padding: 5px 20px;
   margin-top: 210px;
   margin-left: 50px;
 }
@@ -128,8 +128,10 @@ body {
 
 .frame-caption h1,
 .frame-caption h1 a {
-  font-size: 36px;
-  color: #fff;
+  font-size: 34px;
+  font-weight: normal;
+  color: white;
+  padding: 2px 15px;
 }
 
 .frame-caption .lead {
@@ -149,6 +151,11 @@ body {
 	position: fixed;
 }
 
+#me-caption {
+  right: 8%;
+  position: fixed;
+}
+
 /* SPECIFIC FRAMES */
 
 #home-frame {
@@ -161,6 +168,11 @@ body {
 
 #photo-frame-2 {
   background-image: url('../img/canada-mt-edith-cavell.jpg');
+}
+
+#me-frame {
+  background-image: url('../img/climbing.jpg');
+  height: 100%;
 }
 
 .divider {
