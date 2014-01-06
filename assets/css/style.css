@@ -57,7 +57,7 @@ body {
 
 /* Offset the responsive button for proper vertical alignment */
 .navbar .btn-navbar {
-  margin: 20px 35px 20px 0;
+  margin: 20px 15px 20px 0;
 }
 
 /* SPECIFIC LIS */
@@ -313,22 +313,24 @@ body {
   }
 
   .frame {
-    height: 500px;
+    min-height: 0;
+    height: 700px;
     width: auto;
   }
 
   .frame-caption {
     position: static;
-    max-width: 250px;
+    max-width: 350px;
     border-radius: 0px;
     padding: 5px 15px;
     margin-top: 225px;
+    margin-right: 35px;
     background-color: rgba(0,0,0,0.8);
   }
 
   .frame-caption-sub {
     position: absolute;
-    margin-top: 65%;
+    margin-top: 600px;
   }
 
   .frame-caption h1
@@ -347,7 +349,7 @@ body {
   }
 
   .single-img-caption {
-    margin-top: 75%;
+    margin-top: 650px;
   }
 
   /* SPECIFIC FRAMES */
@@ -368,13 +370,13 @@ body {
 
   #adv-caption {
     right: 0;
-    margin-top: 30%;
+    margin-top: 200px;
     position: fixed;
   }
 
   #me-caption {
     right: 0;
-    margin-top: 30%;
+    margin-top: 200px;
     position: fixed;
   }
 
@@ -398,37 +400,34 @@ body {
 
 @media (max-width: 767px) {
 
+  .frame {
+    min-height: 0;
+    height: 500px;
+  }
+
   .navbar-fixed-top,
   .navbar-fixed-bottom,
   .navbar-static-top {
     margin-right: 0;
   }
 
+  .frame-caption {
+    margin-right: 0;
+  }
+
   .frame-caption-sub {
-    position: absolute;
-    margin-top: 75%;
+    margin-top: 400px;
   }
 
   .single-img-caption {
-    margin-top: 85%;
-  }
-}
-
-@media (max-width: 600px) {
-
-  .frame-caption-sub {
-    position: absolute;
-    margin-top: 68%;
-  }
-  .single-img-caption {
-    margin-top: 95%;
+    margin-top: 550px;
   }
 }
 
 @media (max-width: 500px) {
 
   .navbar .navbar-inner {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 15px;
   }
 
   .navbar .brand {
@@ -436,11 +435,19 @@ body {
   }
 
   .frame {
-    height: 150px;
+    min-height: 0;
+    height: 400px;
   }
 
   .frame-caption-sub {
-    position: absolute;
-    margin-top: 125%;
+    margin-top: 320px;
+  }
+
+  .single-img-caption {
+    margin-top: 550px;
+  }
+
+  #me-caption {
+    margin-top: 175px;
   }
 }
