@@ -394,11 +394,11 @@ body {
 
   .frame-caption-sub {
     position: absolute;
-    margin-top: 55%;
+    margin-top: 75%;
   }
 
   .single-img-caption {
-    margin-top: 72%;
+    margin-top: 85%;
   }
 }
 
@@ -415,12 +415,16 @@ body {
 
 @media (max-width: 500px) {
 
+  .navbar .navbar-inner {
+    padding: 0 0 0 15px;
+  }
+
   .navbar .brand {
     font-size: 32px;
   }
 
   .frame-caption-sub {
     position: absolute;
-    margin-top: 76%;
+    margin-top: 110%;
   }
 }
