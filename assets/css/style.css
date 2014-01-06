@@ -314,7 +314,7 @@ body {
 
   .frame {
     min-height: 0;
-    height: 700px;
+    height: 850px;
     width: auto;
   }
 
@@ -323,14 +323,14 @@ body {
     max-width: 350px;
     border-radius: 0px;
     padding: 5px 15px;
-    margin-top: 225px;
+    margin-top: 160px;
     margin-right: 35px;
     background-color: rgba(0,0,0,0.8);
   }
 
   .frame-caption-sub {
     position: absolute;
-    margin-top: 600px;
+    margin-top: 700px;
   }
 
   .frame-caption h1
@@ -349,7 +349,7 @@ body {
   }
 
   .single-img-caption {
-    margin-top: 650px;
+    margin-top: 675px;
   }
 
   /* SPECIFIC FRAMES */
@@ -444,7 +444,7 @@ body {
   }
 
   .single-img-caption {
-    margin-top: 550px;
+    margin-top: 500px;
   }
 
   #me-caption {
