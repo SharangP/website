@@ -322,7 +322,7 @@ body {
 
   .frame-caption-sub {
     position: absolute;
-    margin-top: 52%;
+    margin-top: 65%;
   }
 
   .frame-caption h1
@@ -425,6 +425,6 @@ body {
 
   .frame-caption-sub {
     position: absolute;
-    margin-top: 110%;
+    margin-top: 90%;
   }
 }
