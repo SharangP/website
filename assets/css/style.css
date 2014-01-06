@@ -296,6 +296,12 @@ body {
     color: black;
   }
 
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-right: 0;
+  }
+
   .container.navbar-wrapper {
     margin-bottom: 0;
     width: auto;
@@ -392,6 +398,12 @@ body {
 
 @media (max-width: 767px) {
 
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-right: 0;
+  }
+
   .frame-caption-sub {
     position: absolute;
     margin-top: 75%;
@@ -416,7 +428,7 @@ body {
 @media (max-width: 500px) {
 
   .navbar .navbar-inner {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 10px;
   }
 
   .navbar .brand {
@@ -424,7 +436,7 @@ body {
   }
 
   .frame {
-    height: 300px;
+    height: 150px;
   }
 
   .frame-caption-sub {
