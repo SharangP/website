@@ -394,7 +394,7 @@ body {
 
   .frame-caption-sub {
     position: absolute;
-    margin-top: 50%;
+    margin-top: 55%;
   }
 
   .single-img-caption {
@@ -414,6 +414,10 @@ body {
 }
 
 @media (max-width: 500px) {
+
+  .navbar .brand {
+    font-size: 32px;
+  }
 
   .frame-caption-sub {
     position: absolute;
