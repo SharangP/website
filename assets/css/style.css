@@ -423,8 +423,12 @@ body {
     font-size: 32px;
   }
 
+  .frame {
+    height: 300px;
+  }
+
   .frame-caption-sub {
     position: absolute;
-    margin-top: 115%;
+    margin-top: 125%;
   }
 }
