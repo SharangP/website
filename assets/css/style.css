@@ -176,6 +176,7 @@ body {
 }
 
 #photo-frame-2 {
+  background-position: center center;
   background-image: url('../img/canada-mt-edith-cavell.jpg');
 }
 
